@@ -119,7 +119,7 @@ def training(parameters, model_type):
 if __name__ == "__main__":
     
 	model = 'histogram'
-	#model = 'cnn'
+	model = 'cnn'
  
 	parameters = dict(
 		device_type = 'gpu',
