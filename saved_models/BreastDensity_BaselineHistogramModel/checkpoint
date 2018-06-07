@@ -1,0 +1,2 @@
+model_checkpoint_path: "/data_set/Nan/saves/models_and_logs_2010_2016_data/BIRADS_convnet_with_density_dlr3_histogram_bins_50_data_0.1_lr_0.001/epoch_13/model.ckpt"
+all_model_checkpoint_paths: "/data_set/Nan/saves/models_and_logs_2010_2016_data/BIRADS_convnet_with_density_dlr3_histogram_bins_50_data_0.1_lr_0.001/epoch_13/model.ckpt"
