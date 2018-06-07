@@ -1,4 +1,5 @@
-# breast_density_classifier: \n Breast density classification with deep convolutional neural networks
+# breast_density_classifier: 
+# Breast density classification with deep convolutional neural networks
 ## Introduction
 This is an implementation of the model used for breast density classification as described in https://arxiv.org/pdf/1711.03674.pdf. The implementation allows users to get the density prediction by applying our pretrained Histgram based model and CNN model on standrad screening mammogram exam with four views. We also provide a sample exam in this repository. 
 
