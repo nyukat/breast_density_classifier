@@ -69,7 +69,9 @@ def fc_layer(input_layer, number_of_units = 128, activation_fn = tf.nn.relu, reu
 
 def softmax_layer(input_layer, number_of_outputs = 4):
 
-	y_prediction = tf.contrib.layers.fully_connected(inputs = input_layer, num_outputs = number_of_outputs, activation_fn = tf.nn.softmax)
+	with tf.variable_scope('fully_connected_2') as fully_scope:
+
+		y_prediction = tf.contrib.layers.fully_connected(inputs = input_layer, num_outputs = number_of_outputs, activation_fn = tf.nn.softmax, scope = fully_scope)
 
 	return y_prediction
 
