@@ -9,7 +9,7 @@ This is an implementation of the model used for breast density classification as
 
 ## Data
 
-To use the pretrained model, inputs are required to be 4 images for 4 different views (L-CC, L-MLO, R-CC, R-MLO) with resolution of $2600 \time 2000$
+To use the pretrained model, inputs are required to be 4 images for 4 different views (L-CC, L-MLO, R-CC, R-MLO) with resolution of 2600*2000
 
 ## Model
 Available options could be edited in 'density_model.py'. 
