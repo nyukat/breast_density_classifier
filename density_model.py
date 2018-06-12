@@ -118,7 +118,7 @@ def training(parameters, model_type):
 
 if __name__ == "__main__":
     
-	model = 'histogram'
+	#model = 'histogram'
 	model = 'cnn'
  
 	parameters = dict(
