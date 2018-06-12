@@ -19,6 +19,29 @@ Run the following command to use the model:
 ```bash
 python density_model.py
 ```
+You should get the following output for the given sample:
+
+When `model = histogram`,
+
+```
+Density prediction:
+        Almost entirely fatty (0):                      0.0047207167
+        Scattered areas of fibroglandular density (1):  0.17112055
+        Heterogeneously dense (2):                      0.78054285
+        Extremely dense (3):                            0.043615878
+
+```
+
+When `model = cnn`,
+
+```
+Density prediction:
+        Almost entirely fatty (0):                      7.254259e-05
+        Scattered areas of fibroglandular density (1):  0.0138348285
+        Heterogeneously dense (2):                      0.93227154
+        Extremely dense (3):                            0.05382106
+```
+
 ## Reference
 
 If you found this code useful, please cite our [paper](https://arxiv.org/pdf/1711.03674.pdf).
