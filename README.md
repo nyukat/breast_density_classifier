@@ -21,14 +21,14 @@ python density_model.py
 ```
 ## Reference
 
-If you found this code useful, please cite [the following paper](https://arxiv.org/pdf/1711.03674.pdf):
+If you found this code useful, please cite our [paper](https://arxiv.org/pdf/1711.03674.pdf):
 
-Nan Wu, Krzysztof J. Geras, Yiqiu Shen, Jingyi Su, S. Gene Kim, Eric Kim, Stacey Wolfson, Linda Moy & Kyunghyun Cho
- **"Breast density classification with deep convolutional neural networks."** *arXiv preprint arXiv:1711.03674 (2017).*
+Nan Wu, Krzysztof J. Geras, Yiqiu Shen, Jingyi Su, S. Gene Kim, Eric Kim, Stacey Wolfson, Linda Moy, Kyunghyun Cho
+ **"Breast density classification with deep convolutional neural networks."** *ICASSP, 2018.*
 
-    @article{wu2017breast,
-      title={Breast density classification with deep convolutional neural networks},
-      author={Wu, Nan and Geras, Krzysztof J and Shen, Yiqiu and Su, Jingyi and Kim, S and Kim, Eric and Wolfson, Stacey and Moy, Linda and Cho, Kyunghyun},
-      journal={arXiv preprint arXiv:1711.03674},
-      year={2017}
+    @inproceedings{breast_density,
+        title = {Breast density classification with deep convolutional neural networks},
+        author = {Nan Wu and Krzysztof J. Geras and Yiqiu Shen and Jingyi Su and S. Gene Kim and Eric Kim and Stacey Wolfson and Linda Moy and Kyunghyun Cho},
+        booktitle = {ICASSP},
+        year = {2018}
     }
