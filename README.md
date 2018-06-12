@@ -1,15 +1,15 @@
 # Breast density classification with deep convolutional neural networks
 ## Introduction
-This is an implementation of the model used for breast density classification as described in https://arxiv.org/pdf/1711.03674.pdf. The implementation allows users to get the density prediction by applying our pretrained Histgram based model and CNN model on standrad screening mammogram exam with four views. We also provide a sample exam in this repository. 
+This is an implementation of the model used for breast density classification as described in our paper ["Breast density classification with deep convolutional neural networks"](https://arxiv.org/pdf/1711.03674.pdf). The implementation allows users to get the density prediction by applying our pretrained histogram based model and a CNN model on standard screening mammogram exam with four views. We also provide a sample exam in this repository.
 
 ## Prerequisites
 
-* Python 3.6, TensorFlow 1.5.0, NumPy 1.14.3, SciPy 1.0.0
-* NVIDIA GPU Tesla M40
+* Python (3.6), TensorFlow (1.5.0), NumPy (1.14.3), SciPy (1.0.0).
+* NVIDIA GPU (we used Tesla M40).
 
 ## Data
 
-To use the pretrained model, inputs are required to be 4 images for 4 different views (L-CC, L-MLO, R-CC, R-MLO) with resolution of 2600*2000.
+To use the pretrained model, the input is required to be four images for four different views (L-CC, L-MLO, R-CC, R-MLO) with resolution of 2600x2000.
 
 ## How to run the code
 Available options could be edited in `density_model.py`. You can change the `model` between `cnn` and `histogram`. Please keep `input_size = (2600, 2000)` since the provied model could only be used for images in this resolution. You may need to set the `gpu_number` to fit your situation.  
