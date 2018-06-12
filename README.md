@@ -23,8 +23,8 @@ python density_model.py
 
 If you found this code useful, please cite our [paper](https://arxiv.org/pdf/1711.03674.pdf).
 
-**Breast density classification with deep convolutional neural networks**
-Nan Wu, Krzysztof J. Geras, Yiqiu Shen, Jingyi Su, S. Gene Kim, Eric Kim, Stacey Wolfson, Linda Moy, Kyunghyun Cho
+**Breast density classification with deep convolutional neural networks**\
+Nan Wu, Krzysztof J. Geras, Yiqiu Shen, Jingyi Su, S. Gene Kim, Eric Kim, Stacey Wolfson, Linda Moy, Kyunghyun Cho\
 *ICASSP, 2018*
 
     @inproceedings{breast_density,
