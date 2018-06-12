@@ -1,6 +1,6 @@
 # Breast density classification with deep convolutional neural networks
 ## Introduction
-This is an implementation of the model used for breast density classification as described in our paper ["Breast density classification with deep convolutional neural networks"](https://arxiv.org/pdf/1711.03674.pdf). The implementation allows users to get the density prediction by applying our pretrained histogram based model and a CNN model on standard screening mammogram exam with four views. We also provide a sample exam in this repository.
+This is an implementation of the model used for breast density classification as described in our paper ["Breast density classification with deep convolutional neural networks"](https://arxiv.org/pdf/1711.03674.pdf). The implementation allows users to get the breast density prediction by applying one of our pretrained models: a histogram-based model or a multi-view CNN. Both models act on screening mammography exams with four standard views. As a part of this repository, we provide a sample exam.
 
 ## Prerequisites
 
@@ -9,31 +9,28 @@ This is an implementation of the model used for breast density classification as
 
 ## Data
 
-To use the pretrained model, the input is required to be four images for four different views (L-CC, L-MLO, R-CC, R-MLO) with resolution of 2600x2000.
+To use the pretrained model, the input is required to be consisting of four images, one for each view (L-CC, L-MLO, R-CC, R-MLO). Each image has to have the size of 2600x2000 pixels.
 
 ## How to run the code
-Available options could be edited in `density_model.py`. You can change the `model` between `cnn` and `histogram`. Please keep `input_size = (2600, 2000)` since the provied model could only be used for images in this resolution. You may need to set the `gpu_number` to fit your situation.  
+Available options could be edited in `density_model.py`. You can set the `model` to `cnn` or `histogram`. Please keep `input_size = (2600, 2000)` since the provied model could only be used for images in this resolution. You may need to set the `gpu_number` to fit your situation.  
 
-Run the following command to use the model:
+Run the following command to use the model.
 
 ```bash
 python density_model.py
 ```
-You should get the following output for the given sample:
+You should get the following outputs for the sample provided in the repository.
 
-When `model = histogram`,
-
+With `model = 'histogram'`:
 ```
 Density prediction:
         Almost entirely fatty (0):                      0.0047207167
         Scattered areas of fibroglandular density (1):  0.17112055
         Heterogeneously dense (2):                      0.78054285
         Extremely dense (3):                            0.043615878
-
 ```
 
-When `model = cnn`,
-
+With `model = 'cnn'`:
 ```
 Density prediction:
         Almost entirely fatty (0):                      7.254259e-05
