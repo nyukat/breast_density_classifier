@@ -1,6 +1,6 @@
 # Breast density classification with deep convolutional neural networks
 ## Introduction
-This is an implementation of the model used for breast density classification as described in our paper ["Breast density classification with deep convolutional neural networks"](https://arxiv.org/pdf/1711.03674.pdf). The implementation allows users to get the breast density prediction by applying one of our pretrained models: a histogram-based model or a multi-view CNN. Both models act on screening mammography exams with four standard views. As a part of this repository, we provide a sample exam.
+This is an implementation of the model used for breast density classification as described in our paper ["Breast density classification with deep convolutional neural networks"](https://arxiv.org/pdf/1711.03674.pdf). The implementation allows users to get the breast density prediction by applying one of our pretrained models: a histogram-based model or a multi-view CNN. Both models act on screening mammography exams with four standard views. As a part of this repository, we provide a sample exam (in `images` directory).
 
 ## Prerequisites
 
@@ -12,11 +12,11 @@ This is an implementation of the model used for breast density classification as
 To use the pretrained model, the input is required to be consisting of four images, one for each view (L-CC, L-MLO, R-CC, R-MLO). Each image has to have the size of 2600x2000 pixels.
 
 ## How to run the code
-Available options could be edited in `density_model.py`. You can set the `model` to `cnn` or `histogram`. Please keep `input_size = (2600, 2000)` since the provied model could only be used for images in this resolution. You may need to set the `gpu_number` to fit your situation.  
+Available options could be found at the bottom of the file `density_model.py`. You can set the `model` to `'cnn'` or `'histogram'`. Please keep `input_size = (2600, 2000)` since the provied model was trained with images in this resolution. You may need to change `gpu_number`.
 
 Run the following command to use the model.
 
-```bash
+```
 python density_model.py
 ```
 You should get the following outputs for the sample provided in the repository.
@@ -41,7 +41,7 @@ Density prediction:
 
 ## Reference
 
-If you found this code useful, please cite our [paper](https://arxiv.org/pdf/1711.03674.pdf).
+If you found this code useful, please cite our paper.
 
 **Breast density classification with deep convolutional neural networks**\
 Nan Wu, Krzysztof J. Geras, Yiqiu Shen, Jingyi Su, S. Gene Kim, Eric Kim, Stacey Wolfson, Linda Moy, Kyunghyun Cho\
