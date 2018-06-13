@@ -52,7 +52,7 @@ def read_images(image_path, view):
 	def normalise_single_image(image):
 
 		image -= numpy.mean(image)
-		image /= numpy.maximum(numpy.std(image), 10**(-5))
+		image /= numpy.maximum(numpy.std(image))
 
 	image = misc.imread(image_path + view + '.png')
 	image = image.astype(numpy.float32)
