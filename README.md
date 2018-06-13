@@ -24,19 +24,19 @@ You should get the following outputs for the sample exam provided in the reposit
 With `model = 'histogram'`:
 ```
 Density prediction:
-        Almost entirely fatty (0):                      0.0047207167
-        Scattered areas of fibroglandular density (1):  0.17112055
-        Heterogeneously dense (2):                      0.78054285
-        Extremely dense (3):                            0.043615878
+        Almost entirely fatty (0):                      0.08194443
+        Scattered areas of fibroglandular density (1):  0.7830397
+        Heterogeneously dense (2):                      0.13350312
+        Extremely dense (3):                            0.0015126525
 ```
 
 With `model = 'cnn'`:
 ```
 Density prediction:
-        Almost entirely fatty (0):                      7.254259e-05
-        Scattered areas of fibroglandular density (1):  0.0138348285
-        Heterogeneously dense (2):                      0.93227154
-        Extremely dense (3):                            0.05382106
+        Almost entirely fatty (0):                      0.20968862
+        Scattered areas of fibroglandular density (1):  0.7650766
+        Heterogeneously dense (2):                      0.024949048
+        Extremely dense (3):                            0.0002858529
 ```
 
 ## Reference
