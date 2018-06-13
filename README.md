@@ -9,17 +9,17 @@ This is an implementation of the model used for breast density classification as
 
 ## Data
 
-To use the pretrained model, the input is required to be consisting of four images, one for each view (L-CC, L-MLO, R-CC, R-MLO). Each image has to have the size of 2600x2000 pixels.
+To use one of the pretrained models, the input is required to consist of four images, one for each view (L-CC, L-MLO, R-CC, R-MLO). Each image has to have the size of 2600x2000 pixels. The images in the provided sample exam were already cropped to the correct size.
 
 ## How to run the code
-Available options could be found at the bottom of the file `density_model.py`. You can set the `model` to `'cnn'` or `'histogram'`. Please keep `input_size = (2600, 2000)` since the provied model was trained with images in this resolution. You may need to change `gpu_number`.
+Available options can be found at the bottom of the file `density_model.py`. You can set the `model` to `'cnn'` or `'histogram'`. Please keep `input_size = (2600, 2000)` as the provided pretrained models were trained with images in this resolution. You may need to change `gpu_number`.
 
 Run the following command to use the model.
 
 ```
 python density_model.py
 ```
-You should get the following outputs for the sample provided in the repository.
+You should get the following outputs for the sample exam provided in the repository.
 
 With `model = 'histogram'`:
 ```
@@ -41,7 +41,7 @@ Density prediction:
 
 ## Reference
 
-If you found this code useful, please cite our paper.
+If you found this code useful, please cite our paper:
 
 **Breast density classification with deep convolutional neural networks**\
 Nan Wu, Krzysztof J. Geras, Yiqiu Shen, Jingyi Su, S. Gene Kim, Eric Kim, Stacey Wolfson, Linda Moy, Kyunghyun Cho\
